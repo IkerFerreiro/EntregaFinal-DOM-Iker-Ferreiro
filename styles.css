@@ -8,6 +8,12 @@ header{
     height: 5rem;
 }
 
+#btn-filters:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.4 in-ease;
+}
+
 #logo {
     width: 10rem;
     height: 6rem;
@@ -39,6 +45,23 @@ main {
     display: grid;
     grid-template-columns: 10% 90%;
     height: 100vh;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 230px;
+    height: 360px;
+    text-align: center;
+    background-color: #f9f9f9;
+        transition: transform 0.4s ease;
+    }
+    .producto:hover {
+        cursor: pointer;
+        transform: scale(1.1);
 }
 
 .sidebar {
@@ -74,13 +97,13 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 1rem;
     margin: 3rem;
-    justify-content: left;
+    grid-gap: 1rem;
     align-items: center;
     width: 100%;
 }
 .main-content.reduced{
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 10rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
 }
 
 

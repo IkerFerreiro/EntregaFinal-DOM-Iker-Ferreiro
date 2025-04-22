@@ -24,7 +24,7 @@ const products = [
     name: 'Hot Wheels City Desafío del T-Rex',
     price: 34.99,
     age: 5,
-    seller: 'HOT WHEELS',
+    seller: 'Hot Wheels',
     image: 'https://juguettos.com/3445775-thickbox_default/hot-wheels-city-desafio-del-t-rex.jpg'
     },
     {
@@ -38,15 +38,15 @@ const products = [
     name: 'Adrenalyn La Liga 2024-205 Pocket Box Platinum',
     price: 7.95,
     age: 7,
-    seller: 'Adrenalyn',
+    seller: 'Juguettos',
     image: 'https://juguettos.com/3462038-thickbox_default/adrenalyn-la-liga-2024-205-pocket-box-platinum-varios-modelos.jpg'
     },
     {
     name: 'Pokémon Pack de Combate',
     price: 12.99,
     age: 8,
-    seller: 'Pokémon',
-    image: 'https://juguettos.com/3471869-thickbox_default/A0312539.jpg'
+    seller: 'NINTENDO',
+    image: 'https://http2.mlstatic.com/D_NQ_NP_604288-MLA78075040540_082024-O.webp'
     },
     {
     name: 'Super Mario Figura Donkey Kong 15cm',
@@ -59,14 +59,14 @@ const products = [
     name: 'Batman Batmóvil Metal de la Película de 1989 y Figura Batman',
     price: 14.99, 
     age: 10,
-    seller: 'juguettos',
+    seller: 'Juguettos',
     image: 'https://juguettos.com/3487355-thickbox_default/batman-batmovil-metal-1989-y-batman.jpg'
     },
     {
     name: 'Dinosaurio Gigante',
     price: 34.99,
     age: 6,
-    seller: 'juguettos',
+    seller: 'Juguettos',
     image: 'https://juguettos.com/3203476-thickbox_default/dinosaurio-gigante.jpg'
     },
     {
@@ -74,98 +74,98 @@ const products = [
       price: 19.99,
       age: 12,
       seller: 'Educa',
-      image: 'https://juguettos.com/3187991-thickbox_default/puzzle-harry-potter-1000-piezas.jpg'
+      image: 'https://th.bing.com/th/id/OIP.byA9conICieWQyWgeGqBAgHaGb?rs=1&pid=ImgDetMain'
     },
     {
       name: 'Playmobil Casa de Muñecas',
       price: 89.99,
       age: 4,
       seller: 'Playmobil',
-      image: 'https://juguettos.com/3235100-thickbox_default/playmobil-casa-de-munecas.jpg'
+      image: 'https://cdn.idealo.com/folder/Product/6556/7/6556794/s11_produktbild_max/playmobil-dollhouse-casa-de-munecas-70205.jpg'
     },
     {
       name: 'Hot Wheels Circuito Mega Loop',
       price: 49.99,
-      age: 6,
+      age: 5,
       seller: 'Hot Wheels',
-      image: 'https://juguettos.com/3294459-thickbox_default/hot-wheels-circuito-mega-loop.jpg'
+      image: 'https://th.bing.com/th/id/OIP.bJnCaC649_Sjb4Uif8X5-QHaE6?rs=1&pid=ImgDetMain'
     },
     {
-      name: 'Barbie Dreamhouse Aventura',
-      price: 199.99,
-      age: 5,
-      seller: 'Mattel',
-      image: 'https://juguettos.com/3275988-thickbox_default/barbie-dreamhouse-aventura.jpg'
+      name: 'LEGO NINJAGO Ninja Dojo Templo Clásico',
+      price: 90.93,
+      age: 8,
+      seller: 'LEGO',
+      image: 'https://th.bing.com/th/id/OIP.ZV2MksHdSMP2FpAy17BJUQHaGx?rs=1&pid=ImgDetMain'
     },
     {
       name: 'LEGO Star Wars AT-AT',
       price: 159.99,
-      age: 10,
+      age: 12,
       seller: 'LEGO',
-      image: 'https://juguettos.com/3329817-thickbox_default/lego-star-wars-at-at.jpg'
+      image: 'https://m.media-amazon.com/images/I/61VVkd21IYL._AC_.jpg'
     },
     {
       name: 'Pelota de Baloncesto Spalding',
       price: 25.99,
       age: 7,
       seller: 'Spalding',
-      image: 'https://juguettos.com/3182467-thickbox_default/pelota-baloncesto-spalding.jpg'
+      image: 'https://th.bing.com/th/id/OIP.0AVNDcWFberT4dzhJoOq8gHaIx?rs=1&pid=ImgDetMain'
     },
     {
       name: 'Tren Eléctrico de Madera',
       price: 44.99,
       age: 3,
       seller: 'Brio',
-      image: 'https://juguettos.com/3218485-thickbox_default/tren-electrico-de-madera.jpg'
+      image: 'https://m.media-amazon.com/images/I/61+wgGX+GzL._AC_SL1024_.jpg'
     },
     {
       name: 'Nerf Ultra Blaster X',
       price: 69.99,
-      age: 8,
+      age: 9,
       seller: 'Hasbro',
-      image: 'https://juguettos.com/3301017-thickbox_default/nerf-ultra-blaster-x.jpg'
+      image: 'https://mensgear.b-cdn.net/wp-content/uploads/2020/08/Untitled-design-1-5-980x657.jpg'
     },
     {
-      name: 'Robot Interactivo Z6',
-      price: 59.99,
+      name: 'Figura Gogeta SSJ4 Dragon Stars Series',
+      price: 21.99,
       age: 6,
-      seller: 'Clementoni',
-      image: 'https://juguettos.com/3256473-thickbox_default/robot-interactivo-z6.jpg'
+      seller: 'Bandai',
+      image: 'https://entrefiguras.com/wp-content/uploads/figura-gogeta-ssj4-dragon-stars-series14-bandai-box.jpg'
     },
     {
-      name: 'Coche Radiocontrol 4x4 Extremo',
-      price: 129.99,
-      age: 8,
-      seller: 'Ninco',
-      image: 'https://juguettos.com/3209871-thickbox_default/coche-radiocontrol-4x4-extremo.jpg'
+      name: 'Banco de trabajo Builder',
+      price: 29.95,
+      age: 3,
+      seller: 'Brio',
+      image: 'https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202210/21/00156613124637____1__1200x1200.jpg?impolicy=Resize&width=1200'
     },
     {
       name: 'Castillo Medieval de Caballeros',
       price: 74.99,
       age: 5,
       seller: 'Playmobil',
-      image: 'https://juguettos.com/3285217-thickbox_default/castillo-medieval-de-caballeros.jpg'
+      image: 'https://m.media-amazon.com/images/I/51m1gByv3HL.jpg'
     },
     {
-      name: 'Puzzle 3D Torre Eiffel',
-      price: 29.99,
-      age: 10,
-      seller: 'Ravensburger',
-      image: 'https://juguettos.com/3314987-thickbox_default/puzzle-3d-torre-eiffel.jpg'
+      name: 'Transformers figura EarthSpark',
+      price: 15.95,
+      age: 6,
+      seller: 'Hasbro',
+      image: 'https://www.juguetespanre.com/907012-large_default/transformers-figuras-earthspark-figura-de-elita-de-hasbro.jpg'
     },
     {
       name: 'Monopoly Clásico',
       price: 34.99,
       age: 8,
       seller: 'Hasbro',
-      image: 'https://juguettos.com/3291127-thickbox_default/monopoly-clasico.jpg'
+      image: 'https://warmusgames.com/wp-content/uploads/2022/05/Monopoly-Clasico-caja.jpg'
     },
     {
       name: 'Patinete Plegable Infantil',
       price: 49.99,
       age: 5,
-      seller: 'Decathlon',
-      image: 'https://juguettos.com/3334479-thickbox_default/patinete-plegable-infantil.jpg'
+      seller: 'Juguettos',
+      image: 'https://www.bing.com/th?id=OPEC.Cb7jfBhlH5aaUw474C474&o=5&pid=21.1&w=144&h=144&qlt=100&dpr=1&pcl=f5f5f5'
     }
 ];
 
@@ -173,31 +173,22 @@ const recorrerArray = () => {
   const container = document.querySelector('.main-content');
   products.forEach(product => {
     const card = document.createElement('div');
-    card.style.border = "1px solid #ccc";
-    card.style.padding = "10px";
-    card.style.margin = "10px";
-    card.style.width = "250px";
-    card.style.height = "430px";
-    card.style.textAlign = "center";
-    card.style.backgroundColor = "#f9f9f9";
+    const image = document.createElement("img");
+    const name = document.createElement("h3");
+    const price = document.createElement("p");
+    const age = document.createElement("p");
+    const seller = document.createElement("p");
+
     card.classList.add('producto');
     card.dataset.seller = product.seller.toLowerCase();
-
-    const image = document.createElement("img");
+    card.dataset.price = product.price;
+    card.dataset.age = product.age;
     image.src = product.image;
     image.style.width = "10rem";
-    image.style.width = "10rem";
-
-    const name = document.createElement("h3");
+    image.style.height = "10rem";
     name.textContent = product.name;
-
-    const price = document.createElement("p");
     price.textContent = `Precio: ${product.price}€`;
-
-    const age = document.createElement("p");
     age.textContent = `Edad recomendada: ${product.age}+`;
-
-    const seller = document.createElement("p");
     seller.textContent = `Vendedor: ${product.seller}`;
 
     card.appendChild(image);
@@ -265,11 +256,17 @@ document.getElementById('search').addEventListener('input', function() {
 
 //filtros--------------------------------------------------------------------------------------------------
 
-
+// Variables globales
 let filtroPrecio = parseFloat(document.getElementById('slider-precio').value);
 let filtroEdad = parseInt(document.getElementById('slider-edad').value);
 let filtroSellers = [];
+const slider = document.getElementById('slider-precio');
+const valorPrecio = document.getElementById('valor-precio');
+const slider2 = document.getElementById('slider-edad');
+const valorEdad = document.getElementById('valor-edad');
+const sellerCheckboxes = document.querySelectorAll('#filtro-vendedor input[type="checkbox"]');
 
+// Función para aplicar los filtros a la vez
 function aplicarFiltros() {
   const productos = document.querySelectorAll('.producto');
   
@@ -289,63 +286,25 @@ function aplicarFiltros() {
   });
 }
 
-
-
-const slider = document.getElementById('slider-precio');
-const valorPrecio = document.getElementById('valor-precio');
-
+// Eventos para los sliders
 slider.addEventListener('input', () => {
   valorPrecio.textContent = `${slider.value} €`;
-  filtrarPorPrecio(slider.value);
+  filtroPrecio = parseFloat(slider.value);
+  aplicarFiltros();
 });
-const filtrarPorPrecio = (maxPrice) => {
-  const productos = document.querySelectorAll('.producto');
-  productos.forEach((producto, index) => {
-    if (products[index].price <= maxPrice) {
-      producto.style.display = '';
-    } else {
-      producto.style.display = 'none';
-    }
-  });
-};
-
-
-
-const slider2 = document.getElementById('slider-edad');
-const valorEdad = document.getElementById('valor-edad');
 
 slider2.addEventListener('input', () => {
   valorEdad.textContent = `${slider2.value} +`;
-  filtrarPorEdad(slider2.value);
+  filtroEdad = parseInt(slider2.value);
+  aplicarFiltros();
 });
-const filtrarPorEdad = (maxEdad) => {
-  const productos = document.querySelectorAll('.producto');
-  productos.forEach((producto, index) => {
-    if (products[index].age <= maxEdad) {
-      producto.style.display = '';
-    } else {
-      producto.style.display = 'none';
-    }
-  });
-};
 
-
-const sellerCheckboxes = document.querySelectorAll('#filtro-vendedor input[type="checkbox"]');
-const cachedCheckboxes = Array.from(sellerCheckboxes);
-cachedCheckboxes.forEach(checkbox => {
+// Evento para los checkboxes
+sellerCheckboxes.forEach(checkbox => {
   checkbox.addEventListener('change', () => {
-    const selectedSellers = cachedCheckboxes
+    filtroSellers = Array.from(sellerCheckboxes)
       .filter(cb => cb.checked)
       .map(cb => cb.value.toLowerCase());
-
-    const productElements = document.querySelectorAll('.producto');
-    productElements.forEach(productElement => {
-      const vendedor = productElement.dataset.seller;
-      if (selectedSellers.length === 0 || selectedSellers.includes(vendedor)) {
-        productElement.style.display = 'block'; 
-      } else {
-        productElement.style.display = 'none';
-      }
-    });
+    aplicarFiltros();
   });
 });
