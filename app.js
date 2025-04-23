@@ -166,6 +166,27 @@ const products = [
       age: 5,
       seller: 'Juguettos',
       image: 'https://www.bing.com/th?id=OPEC.Cb7jfBhlH5aaUw474C474&o=5&pid=21.1&w=144&h=144&qlt=100&dpr=1&pcl=f5f5f5'
+    },
+    {
+      name: 'Balón Euroleague Varsity TF-150 Goma INdoor/Outdoor',
+      price: 29.95,
+      age: 6,
+      seller: 'Spalding',
+      image: 'https://spalding-basketball.com/cdn/shop/products/spalding-euroleague-varsity-tf-150-rubber-indooroutdoor-basketball-927088_720x.jpg?v=1697008258'
+    },
+    {
+      name: 'Barco pirata Playmobil Astérix',
+      price: 44.25,
+      age: 5,
+      seller: 'Playmobil',
+      image: 'https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202502/11/00102712369434____6__1200x1200.jpg?impolicy=Resize&width=1200'
+    },
+    {
+      name: 'Coche de carreras teledirigido',
+      price: 28.99,
+      age: 5,
+      seller: 'Brio',
+      image: 'https://ravensburger.cloud/images/product-cover/650x445/Coche-de-carreras-teledirigido-63038800.webp'
     }
 ];
 

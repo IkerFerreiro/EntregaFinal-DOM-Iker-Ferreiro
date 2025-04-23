@@ -1,11 +1,23 @@
+html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
 body{
+    height: 100%;
+    margin: 0;
     font-family: 'Bubblegum Sans', cursive;
     font-size: 22px;
 }
 
-header{
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
     border-bottom: 1.3px ridge rgb(134, 168, 199);
-    height: 5rem;
+    height: 7.5rem;
+    background-color: white;
 }
 
 #btn-filters:hover{
@@ -30,21 +42,22 @@ header{
 }
 .no-decoration {
     text-decoration: none;
+    align-items: center;
     cursor: pointer;
 }
-#search {
+.search{
     display: flex;
-    width: 20%;
-    padding: 10px;
+    height: 2rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 300px;
 }
 
 
 main {
+    flex: 1;
     display: grid;
     grid-template-columns: 10% 90%;
-    height: 100vh;
+    padding: 1rem;
 }
 
 .producto {
@@ -66,6 +79,7 @@ main {
 
 .sidebar {
     display: block;
+    margin-top: 0;
     display: none;
     position: relative;
     background-color: #f1f1f1;
@@ -108,28 +122,24 @@ main {
 
 
 
-
-
-
-
-
-
 footer {
-    position: fixed;
-    bottom: 0;
-    height: 5%;
-    width: 100%;
+    position: relative;
+    width: 100%; 
+    height: auto; 
+    justify-content: center;
+    background-color: white; 
     color: rgb(104, 86, 86);
     text-align: center;
     padding: 10px;
+    border-top: 1.3px ridge rgb(134, 168, 199);
 }
 
 #rrss-list {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    border-top: 1.3px ridge rgb(134, 168, 199);
     align-items: center;
     font-size: small;
 }
