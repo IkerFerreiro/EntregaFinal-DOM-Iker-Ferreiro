@@ -255,6 +255,40 @@ const abrirfiltros = () => {
 };
 abrirfiltros();
 
+// Función para mostrar solo productos en OFERTA
+function showOffers() {
+  const products = document.querySelectorAll('.producto');
+  products.forEach(product => {
+    const productText = product.textContent;
+    const priceMatch = productText.match(/Precio:\s*([0-9]+(?:\.[0-9]+)?)\s*€/i);
+    
+    if (priceMatch) {
+      const price = parseFloat(priceMatch[1]);
+      if (price < 15) {
+        product.style.display = '';
+      } else {
+        product.style.display = 'none';
+      }
+    } else {
+      product.style.display = 'none';
+    }
+  });
+}
+const btnOffers = document.getElementById('btn-offers');
+if (btnOffers) {
+  btnOffers.textContent = "OFERTAS";
+  btnOffers.style.cursor = "pointer";
+  btnOffers.style.fontSize = "1rem";
+  btnOffers.style.backgroundColor = '#4ccc';
+  btnOffers.style.color = 'white';
+  btnOffers.style.padding = '10px 20px'; 
+  btnOffers.style.border = 'none';
+  btnOffers.style.borderRadius = '5px';
+  btnOffers.style.fontFamily = 'Bubblegum Sans';
+  btnOffers.addEventListener('click', showOffers);
+}
+
+
 //Input y boton de busqueda
 const buscarjuguetes = () => {
   window.executeSearch = () => {
@@ -279,9 +313,17 @@ const buscarjuguetes = () => {
       alert("No se han encontrado resultados para tu búsqueda");
     }
   };
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) {
+    searchInput.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        executeSearch();
+      }
+    });
+  }
 };
-
 buscarjuguetes();
+
 
 
 

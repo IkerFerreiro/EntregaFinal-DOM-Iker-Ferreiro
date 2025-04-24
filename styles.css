@@ -25,10 +25,15 @@ header {
     transform: scale(1.1);
     transition: transform 0.4 in-ease;
 }
+#btn-offers:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.4 in-ease;
+}
 
 #logo {
-    width: 10rem;
-    height: 6rem;
+    width: 12rem;
+    height: 7rem;
 }
 
 #barra-nav-list{
@@ -48,8 +53,6 @@ header {
 .search{
     display: flex;
     height: 2rem;
-    border: 1px solid #ccc;
-    width: 300px;
 }
 
 
@@ -79,9 +82,8 @@ main {
 
 .sidebar {
     display: block;
-    margin-top: 0;
+    margin: 0;
     display: none;
-    position: relative;
     background-color: #f1f1f1;
     padding: 1rem;
     border-right: 1.3px ridge rgb(134, 168, 199);
