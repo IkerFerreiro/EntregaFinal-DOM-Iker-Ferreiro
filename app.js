@@ -255,22 +255,33 @@ const abrirfiltros = () => {
 };
 abrirfiltros();
 
-
-document.getElementById('search').addEventListener('input', function() {
-  const filtro = this.value.toLowerCase();
-  const productos = document.querySelectorAll('.producto');
-
-  productos.forEach(producto => {
-      const texto = producto.textContent.toLowerCase();
-      if (texto.includes(filtro)) {
-          producto.style.display = '';
+//Input y boton de busqueda
+const buscarjuguetes = () => {
+  window.executeSearch = () => {
+    const products = document.querySelectorAll('.producto');
+    const searchInput = document.getElementById('searchInput');
+    const searchQuery = searchInput.value.trim().toLowerCase();
+    if (searchQuery === "") {
+      alert("Por favor, ingresa un término de búsqueda.");
+      return;
+    }
+    let foundAny = false;
+    products.forEach(product => {
+      const productText = product.textContent.toLowerCase();
+      if (productText.includes(searchQuery)) {
+        product.style.display = '';
+        foundAny = true;
       } else {
-          producto.style.display = 'none';
+        product.style.display = 'none';
       }
-  });
-});
+    });
+    if (!foundAny) {
+      alert("No se han encontrado resultados para tu búsqueda");
+    }
+  };
+};
 
-
+buscarjuguetes();
 
 
 
