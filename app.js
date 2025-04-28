@@ -382,3 +382,21 @@ sellerCheckboxes.forEach(checkbox => {
     aplicarFiltros();
   });
 });
+
+const navbarMobile = document.getElementById('navbar-mobile');
+const toggleNavbar = () => {
+  navbarMobile.classList.toggle('hidden');
+};document.addEventListener('DOMContentLoaded', () => {
+  const btnFilters = document.getElementById('btn-filters');
+  const navbarMobile = document.getElementById('navbar-mobile');
+  const sidebar = document.querySelector('.sidebar');
+
+  if (btnFilters && navbarMobile && sidebar) {
+    btnFilters.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        navbarMobile.classList.toggle('visible');
+        sidebar.style.display = 'none';
+      }
+    });
+  }
+});
