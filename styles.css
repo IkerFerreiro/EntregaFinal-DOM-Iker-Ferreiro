@@ -9,16 +9,17 @@ body{
     font-family: 'Bubblegum Sans', cursive;
     font-size: 22px;
 }
-
-header {
+.navbar{
     position: sticky;
+    justify-content: space-around;
     top: 0;
     width: 100%;
     z-index: 10;
     border-bottom: 1.3px ridge rgb(134, 168, 199);
-    height: 7.5rem;
+    height: 7.5rem; 
     background-color: white;
 }
+
 
 #btn-filters:hover{
     cursor: pointer;
@@ -152,14 +153,17 @@ footer {
 
 #navbar-mobile {
     display: none;
-    position: fixed;
-    background-color: #f1f1f1;
+    position: flex;
     padding: 1rem;
     width: 100%;
+    height: 8rem;
+    top: 0;
     left: 0;
+    background-color: #f1f1f1;
     z-index: 1;
 }
 #navbar-mobile ul {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -167,8 +171,12 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    border-bottom: 1.3px ridge rgb(134, 168, 199);
 }
+#sidebar-list{
+    display: flex;
+    height: 10rem;
+}
+
 
 @media (max-width: 768px) {
     header {
@@ -181,15 +189,33 @@ footer {
     .sidebar {
       display: none;
     }
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+        padding: 1rem;
+    }
+    .producto {
+        font-size: 15px;
+        height: 85%;
+        padding: 5%;
+    }
+    .producto {
+        font-size: 15px;
+        width: 50;
+        height: 85%;
+    }
     #navbar-mobile {
       display: none;
     }
     #navbar-mobile.visible {
       display: block;
-      position: relative; 
+      position: relative;
     }
-    .main-content.reduced{
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.5rem;
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 0.5rem !important;
+        align-items: center;
     }
 }

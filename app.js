@@ -386,7 +386,8 @@ sellerCheckboxes.forEach(checkbox => {
 const navbarMobile = document.getElementById('navbar-mobile');
 const toggleNavbar = () => {
   navbarMobile.classList.toggle('hidden');
-};document.addEventListener('DOMContentLoaded', () => {
+};
+document.addEventListener('DOMContentLoaded', () => {
   const btnFilters = document.getElementById('btn-filters');
   const navbarMobile = document.getElementById('navbar-mobile');
   const sidebar = document.querySelector('.sidebar');
