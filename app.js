@@ -331,14 +331,22 @@ buscarjuguetes();
 //filtros--------------------------------------------------------------------------------------------------
 
 // Variables globales
+let filtroSellers = [];
 let filtroPrecio = parseFloat(document.getElementById('slider-precio').value);
 let filtroEdad = parseInt(document.getElementById('slider-edad').value);
-let filtroSellers = [];
 const slider = document.getElementById('slider-precio');
 const valorPrecio = document.getElementById('valor-precio');
 const slider2 = document.getElementById('slider-edad');
 const valorEdad = document.getElementById('valor-edad');
 const sellerCheckboxes = document.querySelectorAll('#filtro-vendedor input[type="checkbox"]');
+
+let filtroPrecioMobile = parseFloat(document.getElementById('slider-precio-mobile').value);
+let filtroEdadMobile = parseInt(document.getElementById('slider-edad-mobile').value);
+const sliderMobile = document.getElementById('slider-precio-mobile');
+const valorPrecioMobile = document.getElementById('valor-precio-mobile');
+const sliderMobile2 = document.getElementById('slider-edad-mobile');
+const valorEdadMobile2 = document.getElementById('valor-edad-mobile');
+
 
 // Función para aplicar los filtros a la vez
 function aplicarFiltros() {
@@ -358,7 +366,37 @@ function aplicarFiltros() {
       producto.style.display = 'none';
     }
   });
+  const navbarMobile = document.getElementById('navbar-mobile');
+  const toggleNavbar = () => {
+  navbarMobile.classList.toggle('hidden');
+};
 }
+
+// Función para aplicar los filtros a la vez pero en formato móvil
+function aplicarFiltrosMobile() {
+  const productos = document.querySelectorAll('.producto');
+  
+  productos.forEach(producto => {
+    const precio = parseFloat(producto.dataset.price);
+    const edad = parseInt(producto.dataset.age);
+    const seller = producto.dataset.seller.toLowerCase();
+    const cumplePrecioMobile = precio <= filtroPrecioMobile;
+    const cumpleEdadMobile = edad <= filtroEdadMobile;
+    const cumpleSeller = filtroSellers.length === 0 || filtroSellers.includes(seller);
+
+    if (cumplePrecioMobile && cumpleEdadMobile && cumpleSeller) {
+      producto.style.display = '';
+    } else {
+      producto.style.display = 'none';
+    }
+  });
+
+  const navbarMobile = document.getElementById('navbar-mobile');
+  const toggleNavbar = () => {
+    navbarMobile.classList.toggle('hidden');
+  };
+}
+
 
 // Eventos para los sliders
 slider.addEventListener('input', () => {
@@ -372,6 +410,21 @@ slider2.addEventListener('input', () => {
   filtroEdad = parseInt(slider2.value);
   aplicarFiltros();
 });
+
+
+// Eventos para los sliders-mobile
+sliderMobile.addEventListener('input', () => {
+  valorPrecioMobile.textContent = `${sliderMobile.value} €`;
+  filtroPrecioMobile = parseFloat(sliderMobile.value);
+  aplicarFiltrosMobile();
+});
+
+sliderMobile2.addEventListener('input', () => {
+  valorEdadMobile2.textContent = `${sliderMobile2.value} +`;
+  filtroEdadMobile = parseInt(sliderMobile2.value);
+  aplicarFiltrosMobile();
+});
+
 
 // Evento para los checkboxes
 sellerCheckboxes.forEach(checkbox => {
