@@ -167,44 +167,53 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    border-bottom: 1.3px ridge rgb(134, 168, 199);
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header {
-        height: 5rem;
+        height: 6rem;
     }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 0.1rem;
+    }
+
+    .search input[type="text"] {
+        width: 5rem;
+    }
+
     #logo {
         width: 8rem;
         height: 5.5rem;
     }
+
     .sidebar {
       display: none;
     }
-    .main-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.5rem;
-        padding: 1rem;
-    }
     .producto {
-        font-size: 15px;
-        height: 85%;
-        padding: 5%;
-        width: 50;
+        display: grid;
+        font-size: 0.9rem;
+        height: 90%;
+        width: 100%;
+        
+        margin: auto;
     }
+
     #navbar-mobile {
       display: none;
     }
+
     #navbar-mobile.visible {
       display: block;
       position: relative;
     }
+
     .main-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
-        grid-gap: 0.5rem !important;
+        grid-gap: 2rem !important;
         align-items: center;
     }
 }
